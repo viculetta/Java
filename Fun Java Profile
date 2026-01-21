@@ -1,0 +1,9 @@
+public class MyProfile {
+	public static void main(String[] args){
+    String name = "Victoria";
+    int age = 14;
+    double desiredSalary = 999,999.99;
+    char gender = 'f';
+    boolean lookingForJob = false;
+	}
+}
