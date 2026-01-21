@@ -1,0 +1,17 @@
+public class Tree {
+
+    public static void
+    main(String[] args) {
+        System.out.println("Hi! My name is Victoria and I am learning Java!!");
+
+        System.out.println("At you ready to plant trees with me?");
+        System.out.println("  *");
+        System.out.println(" **");
+        System.out.println("****");
+        System.out.println(" **");
+        System.out.println("  *");
+        System.out.println("  *");
+        System.out.println("^^^^^^^^");
+    }
+
+}
