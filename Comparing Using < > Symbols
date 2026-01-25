@@ -1,0 +1,12 @@
+public class GreaterLessThan {
+	public static void main(String[] args) {   
+		double creditsEarned = 176.5;
+    double creditsOfSeminar = 8;
+    double creditsToGraduate = 180;
+    boolean isItGreater = creditsEarned > creditsToGraduate;
+    System.out.println(isItGreater);
+    double creditsAfterSeminar = creditsEarned + creditsOfSeminar;
+    boolean isItReallyGreater = creditsToGraduate < creditsAfterSeminar;
+    System.out.println(isItReallyGreater);
+	}
+}
