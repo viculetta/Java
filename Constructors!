@@ -1,0 +1,17 @@
+Main.java:
+
+public class Main{
+  public static void main(String[] args){
+    Store newStore = new Store();
+  }
+}
+
+
+Store.java:
+
+public class Store {
+  public Store() {
+    System.out.println("I am inside the Store constructor.");
+  }
+  
+}
