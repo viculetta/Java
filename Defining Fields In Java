@@ -1,0 +1,8 @@
+public class Dog{
+  String name;
+  String  breed;
+  double weight;
+  public Dog(){
+    //DO NOT WRITE ANYTHING HERE!!
+  }
+}
