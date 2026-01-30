@@ -1,0 +1,23 @@
+main:
+
+public class Main {
+    public static void main(String[] args) {
+        Store cookieShop = new Store("cookies", 12, 3.75);
+    }
+}
+
+store:
+
+public class Store {
+
+    // instance fields
+    public String productType;
+
+    // constructor method
+    public Store(String product, int count, double price) {
+        productType = product;
+        int inventoryCount = count;
+        double inventoryPrice = price;
+    }
+}
+
