@@ -1,0 +1,28 @@
+========== Main ==========
+public class MyProgram{
+    
+    public static void main(String[] args){
+        
+        System.out.println("Hello There! Just testing ;)");
+        
+        Store lemonade = new Store("Victoria", 14);
+        lemonade.newCustomer("Victoria", 14);
+    }
+}
+
+========== Store ==========
+
+public class Store {
+    public String name;
+    public int age;
+    public Store(String customerName, int customerAge) {
+        String name = customerName;
+        int age = customerAge;
+        System.out.println("Got this far!");
+    }
+    
+    public void newCustomer(String name, int age) {
+            System.out.print("Hello there " + name + " age " + age);
+            
+    }
+}
