@@ -17,5 +17,6 @@ public class Newsfeed {
     String[] topics = {"Opinion", "Tech", "Science", "Health"};
     return(topics);
   }
-    
+  //self note:
+  //Remember to use the curly braces when making arrays!!
 }
