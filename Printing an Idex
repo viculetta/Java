@@ -1,0 +1,9 @@
+//When printing an index of an array, use the square brackets.
+//Here is an example:
+
+double[] prices = {13.1, 15.87, 14.22, 16.66};
+
+System.out.println(prices[1]);
+
+//This command will print:
+15.87
