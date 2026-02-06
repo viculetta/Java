@@ -1,0 +1,4 @@
+public int getNumTopics(){
+    return(topics.length);
+  }
+//This returns the length of the list topics
