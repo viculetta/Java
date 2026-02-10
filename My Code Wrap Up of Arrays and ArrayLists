@@ -1,0 +1,26 @@
+import java.util.ArrayList;
+
+class List {
+  
+  public static void main(String[] args) {
+    int[] studentAges = {13, 14, 14, 15, 12, 15};
+    ArrayList<String> names = new ArrayList<String>();
+    names.add("Olivia");
+    names.add("Victoria");
+    names.add("Gloria");
+    names.add("Mom");
+    names.add("Dad");
+    names.add("Random Dude");
+    if (names.indexOf("Mom") == 2) {
+      System.out.println("Mom is third!");
+    } else if (names.indexOf("Mom") == 1) {
+      System.out.println("Mom is second!");
+    } else {
+      System.out.println("Mom is the best!");
+    }
+    int id = names.indexOf("Random Dude");
+    names.remove(id);
+    System.out.println(names);
+  }
+  
+}
