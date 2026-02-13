@@ -13,3 +13,18 @@ public class CombineNames {
   }
   
 }
+
+=========== Another Way To Do This ===========
+public class CombineNames {
+  
+	public static void main(String[] args) {
+    
+    // Add your first names:
+    String firstName = "Victoria ";  
+    String lastName = "Osadchuk";
+    // What's the full name?
+    System.out.println(firstName.concat(lastName));
+    
+  }
+  
+}
