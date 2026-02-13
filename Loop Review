@@ -1,0 +1,19 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+
+class Playground {
+
+	public static void main(String[] args) {
+    System.out.println("Congrats on finishing Java loops!");
+    for (int number = 1; number < 18; number++) {
+      System.out.println("This loop has run " + number + " times! :D");
+      if (number % 2 == 0) {
+        System.out.println("The number is even!");
+      } else {
+        System.out.println("Your number is odd!");
+      }
+      System.out.println(number);
+	  }
+    System.out.println("Hasn't this gotten boring yet?");
+  }
+}
