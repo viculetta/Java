@@ -1,0 +1,15 @@
+public class CombineNames {
+  
+	public static void main(String[] args) {
+    
+    // Add your first names:
+    String firstName = "Victoria ";  
+    String lastName = "Osadchuk";
+    String fullName = firstName;
+    // What's the full name?
+    fullName = fullName.concat(lastName);
+    System.out.println(fullName);
+    
+  }
+  
+}
