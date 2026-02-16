@@ -1,0 +1,15 @@
+public class Review {
+  
+  public static void main(String[] args) {
+    String name = "Victoria";
+    String full = name.concat(", hello!");
+    System.out.println(full);
+    System.out.println("This message was " + full.length() + " characters long.");
+    String actual = full.substring(0, 8);
+    System.out.println(actual);
+    System.out.println(actual.toUpperCase());
+    System.out.print(name.charAt(0));
+    
+  }
+  
+}
