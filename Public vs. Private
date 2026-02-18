@@ -1,0 +1,42 @@
+public class Bank{
+  public static void main(String[] args){
+    CheckingAccount accountOne = new CheckingAccount("Zeus", 100, "1");
+    CheckingAccount accountTwo = new CheckingAccount("Hades", 200, "2");
+    System.out.println(accountOne.name);
+    accountOne.addFunds(5);
+    accountOne.getInfo();
+  }
+
+}
+
+===== Seperate File ===========
+
+public class CheckingAccount{
+  public String name;
+  private int balance;
+  private String id;
+  
+  public CheckingAccount(String inputName, int inputBalance, String inputId){
+    name = inputName;
+    balance = inputBalance;
+    id = inputId;
+  }
+  
+  public void addFunds(int fundsToAdd){
+    balance += fundsToAdd;
+  }
+  
+  public void getInfo(){
+    System.out.println("This checking account belongs to " + name +". It has " + balance + " dollars in it.");
+  }
+  
+}
+
+//In this example, if the variable name was private, then running the program in the Bank.java file would run into an error stating that name is 
+//private and it doesn't have access
+
+
+
+
+
+
