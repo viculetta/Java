@@ -1,8 +1,8 @@
 public class ATM{
 
-  // Step 2: Create your static variables here\
-  public static int totalMoney = 0;
-  public static int numATMs = 0;
+  // Step 2: Create your static variables here
+  public static int totalMoney = 0; //static variable
+  public static int numATMs = 0; //static variable
   // Instance variables
   public int money;
 
@@ -26,6 +26,7 @@ public class ATM{
     System.out.println(ATM.totalMoney);
     System.out.println(firstATM.totalMoney);
     System.out.println(secondATM.totalMoney);
+    //all three of these print statements print out 0
   }
 
 }
