@@ -19,7 +19,8 @@ public class ATM{
     }
   }
    public void depositMoney(int amountToDeposit) {
-    
+    this.money += amountToDeposit;
+    this.totalMoney += amountToDeposit;
    }
 
   public static void averageMoney(){
