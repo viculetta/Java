@@ -4,7 +4,7 @@ public class Main{
     Spaetzle kaesespaetzle = new Spaetzle();
     kaesespaetzle.cook();
   }
-}
+} 
 =========== Spaetzle.java ========
 class Spaetzle extends Noodle {
   Spaetzle() {
