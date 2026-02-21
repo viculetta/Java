@@ -1,0 +1,27 @@
+============ Main =========
+public class Main{
+  public static void main(String[] args) {
+     //My Work!
+     Spaghetti spaghettiPomodoro = new Spaghetti();
+     System.out.println(spaghettiPomodoro.texture);
+  }
+}
+
+============ Noodle ============
+class Noodle {
+  double lengthInCentimeters;
+  String shape;
+  String texture = "brittle";
+  
+  public void cook() {
+    
+    this.texture = "cooked";
+    
+  }
+}
+
+============ Spaghetti =============
+//My Work!
+class Spaghetti extends Noodle {
+  
+}
