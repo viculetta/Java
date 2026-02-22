@@ -28,7 +28,7 @@ class ToDos {
     System.out.println(poirotsToDos.size());
       
     // Print the name of the detective with the larger to-do list:
-    if (sherlocksToDos.size() > poirotsToDos.size()) {
+    if (sherlocksToDos.size() > poirotsToDos.size()) { //You can use the .size() method to find the size of the ArrayList
       System.out.print("Sherlock");
     } else {
       System.out.print("Poirot");
