@@ -13,7 +13,7 @@ class LuckyFive {
 
     // Repeat while roll isn't 5
     while (dieRoll != 5) {
-      System.out.println(dieRoll);
+      System.out.println(dieRoll); //this runs only if dieRoll doesn't equal 5
       dieRoll = randomGenerator.nextInt(6) + 1;
     }
     
