@@ -64,7 +64,7 @@ class Ramen extends Noodle {
   }
 }
 
-========== Pho. ========
+========== Pho.java ========
 class Pho extends Noodle {
 
   Pho() {
