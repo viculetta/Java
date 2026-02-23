@@ -6,6 +6,7 @@ public class Creator {
         System.out.println(name);
         System.out.println(yearCreated);
         //Comments are cool!
+        //Comments make it easy for everyone to understand your code!!! :)
     }
 
 }
