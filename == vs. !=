@@ -1,5 +1,4 @@
 public class EqualNotEqual {
-
     public static void main(String[] args) {
 
         int songsA = 9;
@@ -8,7 +7,7 @@ public class EqualNotEqual {
         int albumLengthA = 41;
         int albumLengthB = 53;
 
-        boolean sameNumberOfSongs = songsA == songsB;
+        boolean sameNumberOfSongs = songsA == songsB; //the == compares the two lengths
 
         boolean differentLength = albumLengthA != albumLengthB;
     }
