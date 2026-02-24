@@ -1,0 +1,31 @@
+class Noodle {
+  
+  protected double lengthInCentimeters;
+  protected double widthInCentimeters;
+  protected String shape;
+  protected String ingredients;
+  protected String texture = "brittle";
+  
+  Noodle(String ingr) {
+    this.ingredients = ingr;
+    
+  }
+  
+  public String getCookPrep() {
+    
+    return "Boil noodle for 7 minutes and add sauce.";
+    
+  }
+  public String Noodle(String ingredients) {
+      return("You will need " + ingredients + " to make pho");
+  }
+  public static void main(String[] args) {
+    Noodle pho = new Noodle("egg and noodles");
+
+    System.out.println(pho.getCookPrep());
+    
+    System.out.println(pho.Noodle("egg and noodles"));
+    
+  }
+  
+}
