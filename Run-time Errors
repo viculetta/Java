@@ -1,0 +1,8 @@
+public class Main{
+  public static void main(String[] args) {
+    int width = 20; //width = 0 would run into a run-time error
+    int length = 40;
+    int ratio = length/width;
+    System.out.println(ratio);
+  }
+}
