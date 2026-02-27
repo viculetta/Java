@@ -9,7 +9,7 @@ public class CombineNames {
     // What's the full name?
     fullName = fullName.concat(lastName);
     System.out.println(fullName);
-    
+    //This is the official way that they made the assignment grade
   }
   
 }
@@ -24,7 +24,7 @@ public class CombineNames {
     String lastName = "Osadchuk";
     // What's the full name?
     System.out.println(firstName.concat(lastName));
-    
+    //My own way to solve this same problem with less code :)
   }
   
 }
