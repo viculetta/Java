@@ -1,6 +1,6 @@
 public class Newsfeed {
   String[] topics = {"Opinion", "Tech", "Science", "Health"};
-  int[] views = {0, 0, 0, 0};
+  int[] views = {0, 0, 0, 0}; //array
   String[] favoriteArticles;
   
   public Newsfeed(){
