@@ -3,7 +3,7 @@
 
 double[] prices = {13.1, 15.87, 14.22, 16.66};
 
-System.out.println(prices[1]);
+System.out.println(prices[1]); //the index goes into the brackets
 
 //This command will print:
 15.87
