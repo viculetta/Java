@@ -1,0 +1,63 @@
+import org.code.neighborhood.*;
+
+public class NeighborhoodRunner {
+  public static void main(String[] args) {
+
+    /* ----------------------------------- TO DO -----------------------------------
+     * ✅ Instantiate a Painter object, then use the methods in the Painter class
+     * to navigate through The Neighborhood to reach the traffic cone.
+     * -----------------------------------------------------------------------------
+     */
+    Painter mama = new Painter();
+    mama.turnLeft();
+    mama.turnLeft();
+    mama.turnLeft();
+    mama.move();
+    mama.move();
+    mama.move();
+    mama.move();
+    mama.turnLeft();
+    mama.move();
+    mama.move();
+    mama.move();
+    mama.move();
+    mama.turnLeft();
+    mama.move();
+    mama.move();
+    mama.turnLeft();
+    mama.turnLeft();
+    mama.turnLeft();
+    mama.move();
+    mama.move();
+    mama.move();
+    mama.move();
+    mama.turnLeft();
+    mama.turnLeft();
+    mama.turnLeft();
+    System.out.println("Reached here!");
+    mama.move();
+    mama.move();
+    System.out.println("Reached here!1");
+    mama.move();
+    System.out.println("Reached here!2");
+    mama.move();
+    mama.move();
+    mama.turnLeft();
+    mama.turnLeft();
+    mama.turnLeft();
+    mama.move();
+    mama.turnLeft();
+    mama.move();
+    mama.move();
+    mama.turnLeft();
+    mama.turnLeft();
+    mama.turnLeft();
+    mama.move();
+    mama.move();
+    mama.move();
+    mama.move();
+    mama.turnLeft();
+    mama.turnLeft();
+    mama.turnLeft();
+  }
+}
