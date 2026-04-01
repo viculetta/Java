@@ -1,0 +1,56 @@
+import org.code.neighborhood.*;
+
+public class NeighborhoodRunner {
+  public static void main(String[] args) {
+
+    /* ----------------------------------- TO DO -----------------------------------
+     * ✅ Instantiate the missing Painter objects.
+     * -----------------------------------------------------------------------------
+     */
+    Painter leo = new Painter();
+    Painter akira = new Painter();
+
+    
+
+    leo.move();
+    leo.move();
+    leo.move();
+    leo.move();
+
+    leo.turnLeft();
+    leo.turnLeft();
+    leo.turnLeft();
+
+    leo.move();
+    leo.move();
+    leo.move();
+
+    leo.turnLeft();
+
+    leo.move();
+    leo.move();
+
+    akira.turnLeft();
+    akira.turnLeft();
+    akira.turnLeft();
+
+    akira.move();
+    akira.move();
+    akira.move();
+    akira.move();
+
+    akira.turnLeft();
+
+    akira.move();
+    akira.move();
+    akira.move();
+
+    akira.turnLeft();
+    akira.turnLeft();
+    akira.turnLeft();
+
+    akira.move();
+    akira.move();
+    
+  }
+}
