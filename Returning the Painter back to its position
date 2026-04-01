@@ -1,0 +1,45 @@
+import org.code.neighborhood.*;
+
+public class NeighborhoodRunner {
+  public static void main(String[] args) {
+
+    // Creates a Painter object
+    Painter silas = new Painter();
+
+    // Moves forward three spaces
+    silas.move();
+    silas.move();
+    silas.move();
+
+    // Print direction before turning
+    System.out.println("Before turning: " + silas.getDirection());
+
+    // Turns right by turning left three times
+    silas.turnLeft();
+    silas.turnLeft();
+    silas.turnLeft();
+
+    // Print direction after turning
+    System.out.println("After turning: " + silas.getDirection());
+
+    // Moves forward two spaces
+    silas.move();
+    silas.move();
+
+    /* ---- 🔎 ADD YOUR CODE BELOW THIS LINE ---- */
+    // Use print statements to show direction before and after each turn you write
+    silas.turnLeft();
+    System.out.println("Silas is turning Left!");
+    silas.move();
+    System.out.println("Silas is moving!");
+    silas.turnLeft();
+    silas.move();
+    silas.move();
+    silas.turnLeft();
+    silas.move();
+    silas.move();
+    silas.move();
+    silas.move();
+    silas.move();
+  }
+}
