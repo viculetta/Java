@@ -1,0 +1,69 @@
+import org.code.neighborhood.*;
+
+public class NeighborhoodRunner {
+  public static void main(String[] args) {
+
+    // Creates a Painter object
+    Painter ella = new Painter();
+
+    // Moves forward one space
+    ella.move();
+
+    // Takes paint three times to get all the paint from the bucket
+    ella.takePaint();
+    ella.takePaint();
+    ella.takePaint();
+
+    // Moves and paints three times
+    ella.paint("white");
+    ella.move();
+    ella.paint("white");
+    ella.move();
+    ella.paint("white");
+
+    // Turns right by turning left three times
+    ella.turnLeft();
+    ella.turnLeft();
+    ella.turnLeft();
+
+    // Moves forward one space
+    ella.move();
+
+    // Takes paint three times to get all the paint from the bucket
+    ella.takePaint();
+    ella.takePaint();
+    ella.takePaint();
+
+    // Moves and paints three times
+    ella.paint("white");
+    ella.move();
+    ella.paint("white");
+    ella.move();
+    ella.paint("white");
+
+    // Moves forward one space then takes paint three times to get all the paint from the bucket
+    ella.move();
+
+    /* ---- 🔎 ADD YOUR CODE HERE TO TAKE PAINT FROM THE PAINT BUCKET ---- */
+    ella.takePaint();
+    ella.takePaint();
+    ella.takePaint();
+    /* ---- 🔎 ADD YOUR CODE BELOW THIS LINE ---- */
+    ella.turnLeft();
+    ella.move();
+    ella.paint("red");
+    ella.move();
+    ella.paint("#14AAAA");
+    ella.move();
+    ella.paint("green");
+    ella.turnLeft();
+    ella.move();
+    ella.move();
+    ella.takePaint();
+    ella.takePaint();
+    ella.takePaint();
+
+    
+    
+  }
+}
