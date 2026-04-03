@@ -1,0 +1,31 @@
+import org.code.neighborhood.*;
+
+public class NeighborhoodRunner {
+  public static void main(String[] args) {
+
+    /* ----------------------------------- TO DO -----------------------------------
+     * ✅ Instantiate a Painter object, then use the methods in the Painter class
+     * to navigate and paint the path to the traffic cone.
+     * -----------------------------------------------------------------------------
+     */
+    Painter papa = new Painter();
+    papa.setPaint(7);
+    papa.paint("white");
+    papa.move();
+    papa.paint("white");
+    papa.move();
+    papa.paint("white");
+    papa.move();
+    papa.paint("white");
+    papa.turnLeft();
+    papa.turnLeft();
+    papa.turnLeft();
+    papa.move();
+    papa.paint("white");
+    papa.move();
+    papa.paint("white");
+    papa.turnLeft();
+    papa.move();
+    papa.paint("white");
+  }
+}
