@@ -1,0 +1,98 @@
+import org.code.neighborhood.*;
+
+public class NeighborhoodRunner {
+  public static void main(String[] args) {
+
+    /* ----------------------------------- TO DO -----------------------------------
+     * ✅ Instantiate a Painter object, then use the methods in the Painter class
+     * to navigate and paint the path to the traffic cone.
+     * -----------------------------------------------------------------------------
+     */
+    Painter papa = new Painter();
+    papa.turnLeft();
+    papa.turnLeft();
+    papa.turnLeft();
+    papa.move();
+    papa.takePaint();
+    papa.takePaint();
+    papa.takePaint();
+    papa.takePaint();
+    papa.paint("white");
+    papa.move();
+    papa.paint("white");
+    papa.move();
+    papa.paint("white");
+    papa.move();
+    papa.paint("white");
+    papa.move();
+    papa.takePaint();
+    papa.takePaint();
+    papa.takePaint();
+    papa.takePaint();
+    papa.paint("white");
+    papa.move();
+    papa.paint("white");
+    papa.move();
+    papa.turnLeft();
+    papa.paint("white");
+    papa.move();
+    papa.paint("white");
+    papa.move();
+    papa.takePaint();
+    papa.takePaint();
+    papa.takePaint();
+    papa.takePaint();
+    papa.paint("white");
+    papa.move();
+    papa.paint("white");
+    papa.move();
+    papa.paint("white");
+    papa.move();
+    papa.paint("white");
+    papa.move();
+    papa.takePaint();
+    papa.takePaint();
+    papa.takePaint();
+    papa.takePaint();
+    papa.paint("white");
+    papa.move();
+    papa.paint("white");
+    papa.turnLeft();
+    papa.move();
+    papa.paint("white");
+    papa.move();
+    papa.paint("white");
+    papa.move();
+    papa.takePaint();
+    papa.takePaint();
+    papa.takePaint();
+    papa.takePaint();
+    papa.paint("white");
+    papa.move();
+    papa.paint("white");
+    papa.turnLeft();
+    papa.move();
+    papa.paint("white");
+    papa.move();
+    papa.paint("white");
+    papa.move();
+    papa.paint("white");
+    papa.takePaint();
+    papa.takePaint();
+    papa.takePaint();
+    papa.takePaint();
+    papa.turnLeft();
+    papa.turnLeft();
+    papa.turnLeft();
+    papa.paint("white");
+    papa.move();
+    papa.paint("white");
+    papa.move();
+    papa.turnLeft();
+    papa.turnLeft();
+    papa.turnLeft();
+    papa.paint("white");
+    papa.move();
+    papa.paint("white");
+  }
+}
