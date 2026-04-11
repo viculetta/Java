@@ -1,0 +1,22 @@
+import org.code.neighborhood.*;
+
+public class NeighborhoodRunner {
+  public static void main(String[] args) {
+
+    /* ----------------------------------- TO DO -----------------------------------
+     * ✅ Write the PainterPlus class, then instantiate a PainterPlus object.
+     * -----------------------------------------------------------------------------
+     */
+    
+    Painter mamochka = new Painter();
+    
+    mamochka.move();
+    mamochka.move();
+    mamochka.move();
+    mamochka.turnLeft();
+    mamochka.turnLeft();
+    mamochka.turnLeft();
+    mamochka.move();
+    mamochka.move();
+  }
+}
