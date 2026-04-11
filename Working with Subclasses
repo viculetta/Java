@@ -20,3 +20,10 @@ public class NeighborhoodRunner {
     mamochka.move();
   }
 }
+
+======================
+
+import org.code.neighborhood.*;
+  public class PainterPlus extends NeighborhoodRunner{
+  
+}
