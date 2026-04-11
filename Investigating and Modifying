@@ -1,0 +1,64 @@
+import org.code.neighborhood.*;
+
+public class NeighborhoodRunner {
+  public static void main(String[] args) {
+
+    PainterPlus olivia = new PainterPlus();
+
+    olivia.move();
+
+    olivia.takePaint();
+    olivia.takePaint();
+    olivia.takePaint();
+    olivia.takePaint();
+
+    olivia.paintSquare();
+    
+  }
+}
+
+//===================
+
+import org.code.neighborhood.*;
+
+public class PainterPlus extends Painter {
+
+  // Paints a square
+  public void paintSquare(String color) {
+    move();
+    paint("blue");
+    turnLeft();
+    turnLeft();
+    turnLeft();
+
+    move();
+    paint("blue");
+    turnLeft();
+    turnLeft();
+    turnLeft();
+
+    move();
+    paint("blue");
+    turnLeft();
+    turnLeft();
+    turnLeft();
+
+    move();
+    paint("blue");
+    turnLeft();
+    turnLeft();
+    turnLeft();
+  }
+  
+}
+
+/*=========================== Based on these instructions
+Experiment with the program by making the following modifications, then run the program to observe the results.
+
+✅ TO DO #1: In PainterPlus.java, remove the word void from the line public void paintSquare() then run the program. What error message do you see? What do you think this means?
+
+✅ TO DO #2: Change the line public paintSquare() to public boolean paintSquare() then run the program. What error message do you see? What do you think this means?
+
+✅ TO DO #3: Change the line public boolean paintSquare() to public void paintSquare(String color) then run the program. What error message do you see? What do you think this means?
+
+*/
