@@ -1,0 +1,76 @@
+import org.code.neighborhood.*;
+
+public class NeighborhoodRunner {
+  public static void main(String[] args) {
+
+    // Creates a PainterPlus object
+    PainterPlus callie = new PainterPlus();
+
+    // Turns right
+    callie.turnRight();
+
+    // Moves forward while PainterPlus can move then turns left
+    callie.moveTurnLeft();
+
+    // Moves forward while PainterPlus can move then turns right
+    callie.moveTurnRight();
+
+    // Moves forward while PainterPlus can move
+    while (callie.canMove()) {
+      callie.move();
+    }
+
+    // Moves forward while PainterPlus can move then turns right
+    callie.moveTurnRight();
+
+    // Moves forward while PainterPlus can move then turns left
+    callie.moveTurnLeft();
+
+    /* ----------------------------------- TO DO -----------------------------------
+     * ✅ Call the moveTurnLeft() and move() methods to move forward while
+     * PainterPlus can move then turn left then continue moving to reach the end.
+     * -----------------------------------------------------------------------------
+     */
+
+    callie.moveTurnLeft();
+    while (callie.canMove()) {
+      callie.move();
+    }
+    
+    
+  }
+}
+
+//ANOTHER FILE HERE ---------------------------
+
+import org.code.neighborhood.*;
+
+public class PainterPlus extends Painter {
+
+  // Turns the Painter object to the right
+  public void turnRight() {
+    turnLeft();
+    turnLeft();
+    turnLeft();
+  }
+
+  // Moves forward while the Painter object can move then turns left
+  public void moveTurnLeft() {
+    while (canMove()) {
+      move();
+    }
+
+    turnLeft();
+  }
+
+  // Moves forward while the Painter object can move then turns right
+  public void moveTurnRight() {
+    while (canMove()) {
+      move();
+    }
+
+    turnRight();
+  }
+  
+}
+
