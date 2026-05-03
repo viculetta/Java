@@ -17,7 +17,5 @@ class ToDos {
     
     System.out.println(toDoList);
       
-    
   }
-  
 }
