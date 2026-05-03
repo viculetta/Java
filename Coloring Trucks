@@ -1,0 +1,59 @@
+import org.code.neighborhood.*;
+
+public class NeighborhoodRunner {
+  public static void main(String[] args) {
+
+    // Creates a PainterPlus object
+    PainterPlus melissa = new PainterPlus();
+
+    // Turns right
+    melissa.turnRight();
+
+    // Moves forward two spaces
+    melissa.move();
+    melissa.move();
+    melissa.move();
+
+    // Takes all the paint from the paint bucket
+    melissa.takeAllPaint();
+
+    // Turns left
+    melissa.turnLeft();
+
+    // Paints a line while PainterPlus can move
+    while (melissa.canMove()) {
+      melissa.paintThenMove("white");
+    }
+
+    // Paints the last space
+    melissa.paint("white");
+
+    // Turns right
+    melissa.turnRight();
+
+    // Moves forward while PainterPlus can move
+    while (melissa.canMove()) {
+      melissa.move();
+    }
+
+    /* ----------------------------------- TO DO -----------------------------------
+     * ✅ Call the takeAllPaint(), turnRight(), and paintThenMove() methods to take all
+     * the paint from the bucket, turn right, then paint a line behind the food trucks.
+     * -----------------------------------------------------------------------------
+     */
+
+    melissa.takeAllPaint();
+    melissa.turnRight();
+    while (melissa.canMove()) {
+      melissa.paintThenMove("white");
+    }
+    melissa.paint("white");
+    
+  }
+}
+
+//-------------------------------------------------------------
+
+
+
+
