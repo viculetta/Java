@@ -91,3 +91,43 @@ public class NeighborhoodRunner {
     
   }
 }
+
+//------------------------------------------------------------------------
+
+import org.code.neighborhood.*;
+
+public class PainterPlus extends Painter {
+
+  // Turns the Painter object to the right
+  public void turnRight() {
+    turnLeft();
+    turnLeft();
+    turnLeft();
+  }
+
+  // Takes all paint from a paint bucket
+  public void takeAllPaint() {
+    while (isOnBucket()) {
+      takePaint();
+    }
+  }
+
+  // Moves while the Painter object can move then turns left
+  public void moveTurnLeft() {
+    while (canMove()) {
+      move();
+    }
+
+    turnLeft();
+  }
+
+  // Moves while the Painter object can move then turns right
+  public void moveTurnRight() {
+    while (canMove()) {
+      move();
+    }
+
+    turnRight();
+  }
+  
+}
