@@ -1,0 +1,93 @@
+import org.code.neighborhood.*;
+
+public class NeighborhoodRunner {
+  public static void main(String[] args) {
+
+    // Creates a PainterPlus object
+    PainterPlus brooke = new PainterPlus();
+
+    // Moves forward one space
+    brooke.move();
+
+    // Takes all paint from the paint bucket
+    brooke.takeAllPaint();
+
+    // Moves while PainterPlus can move then turns right
+    brooke.moveTurnRight();
+
+    // Moves while PainterPlus can move
+    while (brooke.canMove()) {
+      brooke.move();
+    }
+
+    // Takes all paint from the paint bucket
+    brooke.takeAllPaint();
+
+    // Turns right
+    brooke.turnRight();
+
+    // Moves while PainterPlus can move then turns left
+    brooke.moveTurnLeft();
+
+    // Moves while PainterPlus can move then turns right
+    brooke.moveTurnRight();
+
+    // Moves while PainterPlus can move
+    while (brooke.canMove()) {
+      brooke.move();
+    }
+
+    // Takes all paint from the paint bucket
+    brooke.takeAllPaint();
+
+    // Turns left
+    brooke.turnLeft();
+
+    // Moves while PainterPlus can move then turns left
+    brooke.moveTurnLeft();
+
+    // Moves while PainterPlus can move
+    while (brooke.canMove()) {
+      brooke.move();
+    }
+
+    // Takes all paint from the paint bucket
+    brooke.takeAllPaint();
+
+    // Turns around
+    brooke.turnLeft();
+    brooke.turnLeft();
+
+    // Moves while PainterPlus can move then turns right
+    brooke.moveTurnRight();
+
+    // Moves while PainterPlus can move then turns right
+    brooke.moveTurnRight();
+
+    // Moves while PainterPlus can move then turns right
+    brooke.moveTurnRight();
+
+    // Moves while PainterPlus can move then turns left
+    brooke.moveTurnLeft();
+
+    // Moves while PainterPlus can move then turns left
+    brooke.moveTurnLeft();
+
+    /* ----------------------------------- TO DO -----------------------------------
+     * ✅ Call the moveTurnLeft(), move(), and takeAllPaint() methods to navigate to
+     * the last paint bucket and take all of the paint from the paint bucket.
+     * -----------------------------------------------------------------------------
+     */
+
+    brooke.moveTurnLeft();
+    
+    while (brooke.canMove()) {
+      brooke.move();
+    }
+
+    brooke.takeAllPaint();
+    //That's ALL that I had to do here!
+    
+    
+  }
+}
