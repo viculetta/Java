@@ -1,0 +1,44 @@
+import org.code.neighborhood.*;
+
+public class NeighborhoodRunner {
+  public static void main(String[] args) {
+
+    // Creates a PainterPlus object
+    PainterPlus molly = new PainterPlus();
+
+    // Move forward while PainterPlus can move
+    while (molly.canMove()) {
+      // Take all of the paint if PainterPlus is on a paint bucket
+      if (molly.isOnBucket()) {
+        molly.takeAllPaint();
+      }
+
+      // Paint the current space if PainterPlus has paint
+      if (molly.hasPaint()) {
+        molly.paint("red");
+      }
+
+      // Move forward one space
+      molly.move();
+    }
+
+    // Paint while PainterPlus has paint
+    while (molly.hasPaint()) {
+      molly.paint("red");
+
+      // Move forward one space if PainterPlus can move
+      if (molly.canMove()) {
+        molly.move();
+      }
+    }
+
+    molly.turnRight();
+    molly.move();
+    System.out.println("Got to here!");
+    while(molly.hasPaint()) {
+      System.out.println("Got to here!");
+      molly.paint("red");
+      molly.move();
+    }
+  }
+}
