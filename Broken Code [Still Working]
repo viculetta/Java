@@ -35,10 +35,11 @@ public class NeighborhoodRunner {
     molly.turnRight();
     molly.move();
     System.out.println("Got to here!");
+/*
     while(molly.hasPaint()) {
       System.out.println("Got to here!");
       molly.paint("red");
-      molly.move();
+      molly.move(); */
     }
   }
 }
