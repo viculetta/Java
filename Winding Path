@@ -99,6 +99,25 @@ public class PainterPlus extends Painter {
     }
   }
 
+/* This code above was the problem. Here is what I replaced it with:
+
+public void moveEastTurnNorth() {
+    while (isFacingEast()) {
+      if (canMove("east")) {
+        move();
+      }
+
+      if (canMove("north")) {
+        turnLeft();
+      }
+    }
+  }
+
+*/
+
+
+
+
   /*
    * Moves east while facing east and can move
    * forward and turns right if can move south
