@@ -1,4 +1,4 @@
-Original Code [have to fix the mistake]:
+//Original Code [have to fix the mistake]:
 import org.code.neighborhood.*;
 
 public class NeighborhoodRunner {
@@ -40,4 +40,79 @@ public class NeighborhoodRunner {
     }
     
   }
+}
+
+//----------------------------------
+
+import org.code.neighborhood.*;
+
+public class PainterPlus extends Painter {
+
+  // Turns the Painter to the right
+  public void turnRight() {
+    turnLeft();
+    turnLeft();
+    turnLeft();
+  }
+
+  /*
+   * Moves north while facing north and can move
+   * forward and turns right if can move east
+   */
+  public void moveNorthTurnEast() {
+    while (isFacingNorth()) {
+      if (canMove()) {
+        move();
+      }
+
+      if (canMove("east")) {
+        turnRight();
+      }
+    }
+  }
+
+  /*
+   * Moves south while facing south and can move
+   * forward and turns left if can move east
+   */
+  public void moveSouthTurnEast() {
+    while (isFacingSouth()) {
+      if (canMove()) {
+        move();
+      }
+
+      if (canMove("east")) {
+        turnLeft();
+      }
+    }
+  }
+
+  /*
+   * Moves east while facing east and can move
+   * forward and turns left if can move north
+   */
+  public void moveEastTurnNorth() {
+    while (isFacingEast()) {
+      if (canMove("north")) {
+        turnLeft();
+      }
+    }
+  }
+
+  /*
+   * Moves east while facing east and can move
+   * forward and turns right if can move south
+   */
+  public void moveEastTurnSouth() {
+    while (isFacingEast()) {
+      if (canMove()) {
+        move();
+      }
+
+      if (canMove("south")) {
+        turnRight();
+      }
+    }
+  }
+  
 }
