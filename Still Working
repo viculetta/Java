@@ -1,0 +1,114 @@
+import org.code.neighborhood.*;
+
+public class NeighborhoodRunner {
+  public static void main(String[] args) {
+
+    // Creates a PainterPlus object
+    PainterPlus brooke = new PainterPlus();
+
+    // Moves east while facing east
+    while (brooke.isFacingEast()) {
+      // Takes all of the paint from the paint bucket if on one
+      brooke.takePaintIfOnBucket();
+
+      // Turns right if can move south
+      if (brooke.canMove("south")) {
+        brooke.turnRight();
+      }
+
+      // Moves forward one space
+      brooke.move();
+    }
+
+    // Paints the first area
+    brooke.paintTwice("coral");
+    brooke.turnAround();
+
+    // Moves north while can move north
+    while (brooke.canMove("north")) {
+      brooke.move();
+
+      // Turns right if can move east
+      if (brooke.canMove("east")) {
+        brooke.turnRight();
+      }
+    }
+
+    // Moves east while facing east
+    while (brooke.isFacingEast()) {
+      brooke.move();
+
+      // Turns right if can move south
+      if (brooke.canMove("south")) {
+        brooke.turnRight();
+      }
+    }
+
+    // Moves south while facing south
+    while (brooke.isFacingSouth()) {
+      brooke.move();
+
+      // Turns right and moves one space if can move west
+      if (brooke.canMove("west")) {
+        brooke.turnRight();
+        brooke.move();
+      }
+    }
+
+    // Gets the paint and paints the second area
+    brooke.takePaintIfOnBucket();
+    brooke.move();
+    brooke.paintTwice("coral");
+    brooke.turnAround();
+
+    // Moves east while facing east
+    while (brooke.isFacingEast()) {
+      // Turns right if can move south
+      if (brooke.canMove("south")) {
+        brooke.turnRight();
+      }
+
+      brooke.move();
+    }
+
+    // Moves while can move then turns right
+    brooke.moveTurnRight();
+
+    // Moves while can move then turns right
+    brooke.moveTurnRight();
+
+    // Gets the paint and paints one side of the third area
+    while (brooke.canMove()) {
+      brooke.takePaintIfOnBucket();
+      brooke.move();
+      brooke.paintThree("coral"); 
+    }
+
+    // Moves to the other side of the third area
+    brooke.turnLeft();
+    brooke.move();
+    brooke.turnLeft();
+
+    // // Paints the other side of the third area
+    brooke.paintTwice("coral");
+    brooke.move();
+
+    // Turns right
+    brooke.turnRight();
+
+    // Moves while can move then turns right
+    brooke.moveTurnRight();
+
+    // Moves forward while can move
+    while (brooke.canMove()) {
+      brooke.move();
+    }
+
+    // Gets the paint and paints the last area
+    brooke.takePaintIfOnBucket();
+    brooke.turnRight();
+    brooke.move();
+    brooke.paintTwice("coral");
+    
+  }
+}
