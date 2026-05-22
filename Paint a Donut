@@ -33,7 +33,7 @@ public class NeighborhoodRunner {
   }
 }
 
-//------------------------------
+//----------------Second File--------------
 
 import org.code.neighborhood.*;
   public class PainterPlus extends Painter{
