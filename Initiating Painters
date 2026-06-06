@@ -11,8 +11,6 @@ public class NeighborhoodRunner {
     Painter emma = new Painter();
     Painter ashley = new Painter();
 
-    
-    
     emma.move();
     emma.move();
 
